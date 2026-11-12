@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# Runtime state and local evidence — never commit
+state/
+debug/
+*.log
+*.jsonl
+.env
+.env.*
+settings.local.json
+
+# OS
+.DS_Store

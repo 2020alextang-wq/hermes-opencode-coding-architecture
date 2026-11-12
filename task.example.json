@@ -1,0 +1,25 @@
+{
+  "schema": "v1",
+  "project": "/absolute/path/to/your/project",
+  "goal": "brief description of the coding task",
+  "operation": "implement",
+  "allowed_files": [
+    "coding_control.py",
+    "tests/test_control.py"
+  ],
+  "command_groups": {
+    "iteration": [],
+    "block_gate": [],
+    "final_gate": [
+      ["python", "-m", "pytest", "tests/", "-q", "-p", "no:cacheprovider"]
+    ]
+  },
+  "test_timeout_seconds": 180,
+  "test_env": {},
+  "model": "",
+  "session_id": null,
+  "parent_run": null,
+  "timeout_seconds": 300,
+  "max_tokens": 500000,
+  "max_permission_denials": 5
+}
